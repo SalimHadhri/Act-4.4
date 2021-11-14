@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="4.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+ https://jakarta.ee/xml/ns/jakartaee/web-app_4_0.xsd">
+ 
+
+
+     <servlet>
+    <servlet-name>Header</servlet-name>
+    <servlet-class>com.thp.project.vintud.web.servlet.Header</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Header</servlet-name>
+    <url-pattern>/Header</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>CreateAnnouncement</servlet-name>
+    <servlet-class>com.thp.project.vintud.web.servlet.CreateAnnouncement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateAnnouncement</servlet-name>
+    <url-pattern>/CreateAnnouncement</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ViewAnnouncement</servlet-name>
+    <servlet-class>com.thp.project.vintud.web.servlet.ViewAnnouncement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewAnnouncement</servlet-name>
+    <url-pattern>/ViewAnnouncement</url-pattern>
+  </servlet-mapping>
+  
+
+    <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
+    
+    <servlet>
+    <servlet-name>SignIn</servlet-name>
+    <servlet-class>com.thp.project.vintud.web.servlet.SignIn</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignIn</servlet-name>
+    <url-pattern>/SignIn</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+    <servlet-name>Connect</servlet-name>
+    <servlet-class>com.thp.project.vintud.web.servlet.Connect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Connect</servlet-name>
+    <url-pattern>/Connect</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
